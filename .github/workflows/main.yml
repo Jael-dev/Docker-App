@@ -13,11 +13,11 @@ jobs:
         name: Checkout
         uses: actions/checkout@v4
       -
-        name: Login to Docker Hub
+        name: jaelkalvin
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          username: jaelkalvin
+          password: dckr_pat_Y7EfQrfzeIRlmZjG0Zg6neOLzA4
       -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -35,4 +35,4 @@ jobs:
           context: .
           push: true
           target: prod
-          tags: ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
+          tags: jaelkalvin/${{ github.event.repository.name }}:latest
