@@ -106,7 +106,7 @@ function AddItemForm({ onNewItem }) {
                         disabled={!newItem.length}
                         className={submitting ? 'disabled' : ''}
                     >
-                        {submitting ? 'Adding...' : 'Add Item'}
+                        {submitting ? 'Adding...' : 'Add'}
                     </Button>
                 </InputGroup.Append>
             </InputGroup>
@@ -177,3 +177,6 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
+
+
+//dckr_pat_Y7EfQrfzeIRlmZjG0Zg6neOLzA4
