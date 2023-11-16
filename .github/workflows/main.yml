@@ -35,4 +35,4 @@ jobs:
           context: .
           push: true
           target: prod
-          tags: ${{ secrets.JAELKALVIN }}/${{ github.event.Docker-App }}:latest
+          tags: ${{ secrets.JAELKALVIN }}/dockerapp:latest
